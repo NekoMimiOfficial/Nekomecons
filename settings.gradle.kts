@@ -41,7 +41,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Lawnicons"
+rootProject.name = "Nekomecons"
 
 enableFeaturePreview("STABLE_CONFIGURATION_CACHE")
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
