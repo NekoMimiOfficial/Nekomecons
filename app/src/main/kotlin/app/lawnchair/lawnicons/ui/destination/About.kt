@@ -224,6 +224,13 @@ private val externalLinks = listOf(
 
 private val coreContributors = listOf(
     Contributor(
+        name= "NekoMimi",
+        username= "NekoMimiOfficial",
+        photoUrl= "https://avatars.githubusercontent.com/u/32408321",
+        socialUrl= "http://nekomimi.tilde.team",
+        descriptionRes= R.string.contribution_core
+    ),
+    Contributor(
         name = "Suphon T.",
         username = "paphonb",
         photoUrl = "https://avatars.githubusercontent.com/u/8080853",

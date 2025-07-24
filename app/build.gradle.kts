@@ -24,7 +24,7 @@ val isReleaseBuild = ciBuild && ciRef.contains("main")
 val devReleaseName = if (ciBuild) "(Dev #$ciRunNumber)" else "($buildCommit)"
 
 val version = "2.14.1"
-val versionDisplayName = version + if (!isReleaseBuild) " $devReleaseName" else ""
+val versionDisplayName = version + if (!isReleaseBuild) "_$devReleaseName" else ""
 
 android {
     compileSdk = 36
@@ -76,7 +76,7 @@ android {
     productFlavors {
         create("app") {
             dimension = "product"
-            resValue("string", "apps_name", "Lawnicons")
+            resValue("string", "apps_name", "Nekomecons")
         }
     }
     sourceSets.getByName("app") {
@@ -102,7 +102,7 @@ android {
     applicationVariants.all {
         outputs.all {
             (this as? ApkVariantOutputImpl)?.outputFileName =
-                "Lawnicons $versionName v${versionCode}_${buildType.name}.apk"
+                "Nekomecons-$versionName-v${versionCode}_${buildType.name}.apk"
         }
     }
 
